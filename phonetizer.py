@@ -19,6 +19,20 @@ import japanese_numbers as jnums
 
 
 
+'0': 'れい'
+'1': 'いち'
+'に' 2
+'さん' 3
+'し' 4
+'ご'5
+'ろく' 6
+'しち' 7
+'はち' 8
+'きゅう' 9
+'じゅう' 10
+
+
+
 class Phonetizer:
     def __init__(self):
         kakasi = pkk.kakasi()
@@ -26,12 +40,17 @@ class Phonetizer:
         kakasi.setMode("K","a")         # Katakana to ascii
         kakasi.setMode("J","a")         # Japanese to ascii
         kakasi.setMode("r","Hepburn")   # use Hepburn Roman table
-        self.numConverter = jnums
+        self.word2num = jnums
         self.wordConverter = kakasi.getConverter()
         self.phonemes=''
         self.token=''
 
 
+    def num2kana(self):
+        kana=''
+        if len(self.phonemes) <= 2:
+            
+        
     def convert_token(self, token):
         self.token=token['token']
         
