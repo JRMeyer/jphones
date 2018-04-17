@@ -48,7 +48,11 @@ class Phonetizer:
 
     def get_phonemes(self, token):
         self.convert_token(token)
-        newToken = {'phonemes' : self.phonemes, 'token': self.token, 'type': self.type}
+        if self.phonemes == "NUM-TOO-LARGE":
+            newToken = {'phonemes' : [self.phonemes], 'token': self.token, 'type': self.type}
+        else:
+            newToken = {'phonemes' : list(self.phonemes), 'token': self.token, 'type': self.type}
+                    
         return newToken
 
 
