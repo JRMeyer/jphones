@@ -33,16 +33,18 @@ Getting Started
 - `Convert-Numbers-to-Japanese`
 
 
-The `Convert-Numbers-to-Japanese` script has been significantly changed, and comes included in this repo, renamed as `num2kana.py`. No need to install anything for it.
+The `Convert-Numbers-to-Japanese` script has been significantly changed, and comes included in this repo, renamed as `num2kana.py`. No need to install it.
 
 
-The `japanese_numbers` module has been modified to work with `jphones` and Python3, and you should install them from my forked versions as such:
+The `japanese_numbers` module has been modified to work with `jphones` and Python3.
+
+Install `japanese_numbers` from my forked version as such:
 
 ```
 $ pip3 install git+https://github.com/JRMeyer/japanese-numbers-python.git
 ```
 
-You can install `pykakasi` and its dependencies as such:
+You should install `pykakasi` and its dependencies as such:
 
 ```
 $ pip3 install six semidbm
