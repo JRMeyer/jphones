@@ -60,8 +60,8 @@ Expected Input
 
 The main `j2p.Phonetizer.get_phonemes()` function expects tokens as Python dicts. Each dict should have two entries:
 
-- 'token': 'unicode-char-string'
-- 'type': 'word' or 'number'
+- `'token'` : `'unicode-char-string'`
+- `'type'` : `'word'` or `'number'`
 
 
 Returned Output
@@ -69,9 +69,8 @@ Returned Output
 
 The function `j2p.Phonetizer.get_phonemes()` returns the original dictionary for the token, with an extra entry for phonemes:
 
-- 'phonemes': ['p','h','o','n','e','m','e','s']
-- 'token': 'unicode-char-string'
-- 'type': 'word' or 'number'
+- `'phonemes'`: `['p','h','o','n','e','m','e','s']`
+
 
 
 
