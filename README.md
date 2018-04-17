@@ -84,7 +84,7 @@ The phoneme set is very naive, but for ASR it should suffice. The phonemes are a
 Big Numbers
 ------------------------------------
 
-Currently `jphones` can only handle numbers up to 9999. Anything larger will be returned with the phoneme-string 'NUM-TOO-LARGE'.
+Currently `jphones` can only handle numbers up to `9999`. Anything larger will be returned with the phoneme-string `'NUM-TOO-LARGE'`.
 
 
 Licencing
