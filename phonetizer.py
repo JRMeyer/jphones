@@ -30,8 +30,10 @@ class Phonetizer:
         self.wordConverter = kakasi.getConverter()
         self.phonemes=''
         self.token=''
+        self.type=''
         
     def convert_token(self, token):
+        self.type=token['type']
         self.token=token['token']
         
         if token['type'] == 'word':
@@ -46,8 +48,8 @@ class Phonetizer:
 
     def get_phonemes(self, token):
         self.convert_token(token)
-        
-        return self.phonemes
+        newToken = {'phonemes' : self.phonemes, 'token': self.token, 'type': self.type}
+        return newToken
 
 
 
