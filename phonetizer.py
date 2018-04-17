@@ -16,21 +16,7 @@
 
 import pykakasi as pkk
 import japanese_numbers as jnums
-
-
-
-'0': 'れい'
-'1': 'いち'
-'に' 2
-'さん' 3
-'し' 4
-'ご'5
-'ろく' 6
-'しち' 7
-'はち' 8
-'きゅう' 9
-'じゅう' 10
-
+import num2kana
 
 
 class Phonetizer:
@@ -40,16 +26,10 @@ class Phonetizer:
         kakasi.setMode("K","a")         # Katakana to ascii
         kakasi.setMode("J","a")         # Japanese to ascii
         kakasi.setMode("r","Hepburn")   # use Hepburn Roman table
-        self.word2num = jnums
+        self.numConverter = num2kana.Converter()
         self.wordConverter = kakasi.getConverter()
         self.phonemes=''
         self.token=''
-
-
-    def num2kana(self):
-        kana=''
-        if len(self.phonemes) <= 2:
-            
         
     def convert_token(self, token):
         self.token=token['token']
@@ -60,7 +40,8 @@ class Phonetizer:
         elif token['type'] == 'number':
             if ',' in self.token:
                 self.token = self.token.replace(",", "")
-            self.phonemes = self.numConverter.to_arabic(token['token'])[0]
+            kana=self.numConverter.conv(jnums.to_arabic(token['token'])[0])
+            self.phonemes = self.wordConverter.do(kana)
 
 
     def get_phonemes(self, token):
