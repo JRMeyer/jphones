@@ -28,7 +28,7 @@ Getting Started
 
 `jphones` is built upon the following Python dependencies:
 
-- `pykakasi`
+- [`pykakasi`](https://github.com/miurahr/pykakasi)
 - `japanese_numbers`
 - `Convert-Numbers-to-Japanese`
 
