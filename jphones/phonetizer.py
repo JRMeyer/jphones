@@ -16,7 +16,7 @@
 
 import pykakasi as pkk
 import japanese_numbers as jnums
-import num2kana
+from jphones import num2kana
 
 
 class Phonetizer:
