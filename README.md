@@ -77,7 +77,7 @@ The function `j2p.Phonetizer.get_phonemes()` returns the original dictionary for
 Phoneme Set
 ------------------------------------
 
-The phoneme set is very naive, but for ASR it should suffice. The phonemes are a one-to-one correlate of the [Romaji Hepburn set](https://en.wikipedia.org/wiki/Hepburn_romanization).
+The phoneme set is very naive, but for ASR built on phonetic decision trees it should suffice. The phonemes are a one-to-one correlate of the [Romaji Hepburn set](https://en.wikipedia.org/wiki/Hepburn_romanization).
 
 
 
