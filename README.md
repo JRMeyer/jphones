@@ -29,8 +29,8 @@ Getting Started
 `jphones` is built upon the following Python dependencies:
 
 - [`pykakasi`](https://github.com/miurahr/pykakasi)
-- `japanese_numbers`
-- `Convert-Numbers-to-Japanese`
+- [`japanese_numbers`](https://github.com/takumakanari/japanese-numbers-python)
+- [`Convert-Numbers-to-Japanese`](https://github.com/Greatdane/Convert-Numbers-to-Japanese)
 
 
 The `Convert-Numbers-to-Japanese` script has been significantly changed, and comes included in this repo, renamed as `num2kana.py`. No need to install it.
