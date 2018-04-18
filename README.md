@@ -4,7 +4,7 @@
 
 `jphones` accepts as input tokens of Japanese (words or numbers), and returns an approximate phonetic transcription.
 
-The tokens can be Kanji, Harigana, Katakana, or Romaji. English words will be returned as is.
+The tokens can be Kanji, Harigana, Katakana, or Romaji. English words will be phonetizer via grapheme-to-phoneme conversion.
 
 Example usage:
 
