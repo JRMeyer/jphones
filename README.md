@@ -13,8 +13,8 @@ import jphones as j2p
 
 token = {'token': 'すごい', 'type': 'word'}
 
-phonetizer = j2p.Phonetizer()
-phonemes = j2p.get_phonemes(token)
+Phonetizer = j2p.phonetizer.Phonetizer()
+phonemes = Phonetizer.get_phonemes(token)
 
 print(phonemes)
 # {'phonemes': ['s', 'u', 'g', 'o', 'i'], 'token': 'すごい', 'type': 'word'}
@@ -25,6 +25,14 @@ print(phonemes)
 Getting Started
 ------------------------------------
 
+### Installation
+
+
+```
+$ pip3 install git+https://github.com/JRMeyer/jphones.git
+```
+
+### Dependencies
 
 `jphones` is built upon the following Python dependencies:
 
