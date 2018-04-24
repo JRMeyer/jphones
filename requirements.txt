@@ -1,0 +1,4 @@
+git+https://github.com/JRMeyer/japanese-numbers-python.git
+six
+semidbm
+pykakasi
